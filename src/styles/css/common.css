@@ -1,0 +1,61 @@
+page { display: block; position: relative; }
+page table { max-width: 100%; }
+
+.entry { font-size: 10.5pt; line-height: 17pt; }
+.entry:not([data-kind="image"]) { margin-left: 6.5mm; margin-right: 6.5mm; }
+.entry p, .entry span { font-size: 10.5pt; line-height: 17pt; }
+.level3 img { display: block; max-width: 100% !important; }
+.level3 .sel_list img { margin: 0; }
+.level5 { margin-top: 2px; }
+.level5:first-of-type { margin-top: 4px; }
+
+/* 문항 문제 영역 */
+.entry-question-area { margin-bottom: 2px; }
+
+/* 문항 번호 */
+.entry-question-area .entry-info {} 
+.entry-question-area .entry-num { margin-right: 4px; font-size: 12pt; }
+/* .entry .entry-question-area .entry-num:after { content: '.'; position: relative; } */
+
+/* 문항 난이도 */
+.entry-question-area .entry-difficulty { display: none; }
+
+/* 문항 종류 (서술형...) */
+.entry [data-answer-type="서술형"] { margin-left: 4px; width: 53px; height: 18px; background-size: cover; background-position: center; background-repeat: no-repeat; background-image: url('https://d3d8dilj3c5bwa.cloudfront.net/static/textbook/temp/answer-type-3.png') }
+
+/* 문항 선택지 */
+.level4[data-col="2"] { display: grid; grid-template-columns: repeat(2, 1fr); } 
+.level4[data-col="3"] { display: grid; grid-template-columns: repeat(3, 1fr); } 
+.level4[data-col="4"] { display: grid; grid-template-columns: repeat(4, 1fr); } 
+.level4[data-col="5"] { display: grid; grid-template-columns: repeat(5, 1fr); } 
+.sel_list { margin-bottom: 4px; position: relative; }
+.sel_list > p.para0 { text-indent: -14px; margin-left: 14px; }
+.sel_list > p.para0 > .sel_num_po {}
+
+/* 문항 보기 */
+table.itex_example_tb { margin: 4px 1px 8px 1px !important; }
+table.itex_example_tb .itex_box_body[data-table-title="보기"] { text-indent: -20px; margin-left: 20px; }
+
+/* 문항 박스 */
+table.itex_normal_tb { margin: 8px 0px !important; }
+table.itex_normal_tb .para0 { padding: 4px 8px; }
+
+.level3 table.itex_center_tb { margin-left: auto !important; margin-right: auto !important; }
+
+/* 문항 연속 */
+.level3 + .level3 { margin-top: 100px; }
+.level3 + .level1 { margin-top: 100px; }
+.level1 + .level1-level3 { margin-top: 20px; }
+.level1-level3 + .level1-level3 { margin-top: 20px; }
+
+/* 지문 박스 */
+.level2 { border: 1px solid #000; padding: 4px; margin-top: 4px; }
+
+.level4 { margin-top: 8px; }
+.entry > .para0 + .para0 { margin-top: 8px; }
+
+/* 문항 이미지 */
+.level3 img { display: block; max-width: 100% !important; }
+
+/* 문항 입력박스 */
+.itexboxevt_parent { margin-right: 2px; }

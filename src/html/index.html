@@ -293,7 +293,9 @@
     <%- include('./메모.ejs') %>
     <script>
       const pageList = document.querySelectorAll('page');
+      let pageNumber = 0;
       for (let page of pageList) {
+        pageNumber++;
         page.insertAdjacentHTML('beforeend', `
           <div>
             <div style="position: absolute;right: -5mm;width: 10mm;height:10mm;top: -10mm;border-left: 1px solid #000;border-bottom: 1px solid #000;box-sizing: border-box;"></div>
@@ -306,6 +308,14 @@
             <div style="position: absolute;left: -10mm;width: 10mm;height:10mm;bottom: -5mm;border-right: 1px solid #000;border-top: 1px solid #000;box-sizing: border-box;"></div>
           </div>
         `)
+
+        const footerElement = page.querySelector('.bk-footer');
+        if (footerElement) {
+          const pageNumberElement = footerElement.querySelector('.bk-page-num');
+          if (pageNumberElement) {
+            pageNumberElement.textContent = pageNumber;
+          }
+        }
       }
 
     </script>

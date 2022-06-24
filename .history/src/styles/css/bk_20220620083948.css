@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @media print {
   @page { size: auto; }
   page { -webkit-print-color-adjust: exact; page-break-after: always; margin: 10mm;  }

@@ -15,7 +15,7 @@
 .bk-quiz-page .bk-footer .bk-info { text-align: left; font: normal normal normal 12px/17px 'Noto Sans KR'; color: #000000; }
 
 
-/********** 속표지 **********/
+/* 속표지 */
 .bk-title-page { padding: 156px 0 65px 70px; height: 100%; display: flex; flex-direction: column; }
 .bk-title-page .bk-main-title { font-family: yg-jalnan; font-size: 87px; color: #4640C1; line-height: 1.1; }
 .bk-title-page .bk-sub-title { font-family: yg-jalnan; font-size: 22px; color: #393939; line-height: 1.3; margin-top: 30px; }

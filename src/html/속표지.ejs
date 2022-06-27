@@ -1,5 +1,5 @@
 <page data-type="bk">
-  <div class="bk-page bk-image-page" style="background-image: url(../styles/image/01.속표지2.png);">
+  <div class="bk-page bk-image-page">
     <div class="bk-title-page">
       <h1 class="bk-main-title">중등 쌍둥이<br>기출문제집</h1>
       <div class="bk-sub-title">중등 2학년 1학기 100점 만점<br>쌍둥이 기출문제집</div>
@@ -8,34 +8,35 @@
 </page>
 <script>
   const json = {
-    "input-info": {
-        "제목": {
-          value: "`${info.title}`",
-          editable: true,
-        },
-        "부제": {
-          value: "`${info.subtitle}`",
-          editable: true,
-        },
-        "과목": {
-          value: "`${info.subject}`"
-        },
-        "학년": {
-          value: "`${info.grade}학년`"
-        },
-        "학기": {
-          value: "`${info.semester}학기`"
-        },
-        "기관명": {
-          value: "`${info.academyName}`"
-        },
-        "편저": {
-          value: "`${info.creators.map(creator => creator.name).join(', ')} 편저`"
-        },
-        "대단원번호": {
-          value: "",
-          numberType: "roma"
-        }
+    input: {
+      "제목": {
+        kind: "교재",
+        value: "`${info.title}`",
+        editable: true,
+      },
+      "부제": {
+        value: "`${info.subtitle}`",
+        editable: true,
+      },
+      "과목": {
+        value: "`${info.subject}`"
+      },
+      "학년": {
+        value: "`${info.grade}학년`"
+      },
+      "학기": {
+        value: "`${info.semester}학기`"
+      },
+      "기관명": {
+        value: "`${info.academyName}`"
+      },
+      "편저": {
+        value: "`${info.creators.map(creator => creator.name).join(', ')} 편저`"
+      },
+      "대단원번호": {
+        value: "",
+        numberType: "roma"
+      }
     },
     entry: {
       "문제": {

@@ -3,7 +3,7 @@ const ejs = require('gulp-ejs');
 const browserSync = require('browser-sync').create();
 
 function ejsTask() {
-  return src('./src/html/index.html').pipe(ejs()).pipe(dest('dist/html'));
+  return src('./src/html/*.html').pipe(ejs()).pipe(dest('dist/html'));
 }
 
 function styleTask() {

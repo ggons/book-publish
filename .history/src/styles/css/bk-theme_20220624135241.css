@@ -1,0 +1,17 @@
+.bk-image-page { background-size: 100% 100%; }
+
+.bk-quiz-page .bk-body .entry { font-family: 'Noto Serif KR'; color: #000; }
+.bk-quiz-page .bk-body .entry .entry-info { display: inline-flex; align-items: center; margin-bottom: 12px; }
+.bk-quiz-page .bk-body .entry .entry-info .entry-num { font-size: 22px; font-family: 'Noto Sans KR'; letter-spacing: -1.01px; color: #598E34; font-weight: 700; line-height: 18px; }
+
+.bk-quiz-page .bk-body .entry .entry-info .entry-difficulty { font-size: 14px;  font-family: 'Noto Sans KR'; font-weight: 500; display: inline-block; width: 16px; height: 16px; line-height: 16px; color: #fff; background-color: #813D92; border-radius: 50%; text-align: center; margin-left: 6px; margin-top: 2px; }
+.bk-quiz-page .bk-body .entry.level3 + .level3 { margin-top: 40px; }
+.bk-quiz-page .bk-body img + .level3 { margin-top: 40px; }
+
+.bk-quiz-page .bk-footer { line-height: 13mm; }
+.bk-quiz-page .bk-footer .bk-page-num { text-align: left; font: normal normal bold 14px/20px 'Noto Sans KR'; color: #453896; margin-right: 16px; margin-left: 28px; }
+.bk-quiz-page .bk-footer .bk-info { text-align: left; font: normal normal normal 12px/17px 'Noto Sans KR'; color: #000000; }
+
+
+.bk-title-page { padding: 156px 77px 66px; }
+.bk-title { font-size: 87px; color: #4640C1; }

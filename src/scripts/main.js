@@ -15,7 +15,7 @@ class Main {
     // 목차 순서대로 내지 템플릿 렌더링
   }
 
-  renderCover() {}
+  renderCover() { }
 
   renderContents() {}
 }
@@ -71,6 +71,10 @@ function replaceData(string, ...args) {
   );
 }
 
+function insertData() {
+  const fn = new Function(교재, )
+}
+
 /*
   페이지 종류
 
@@ -118,7 +122,7 @@ function replaceData(string, ...args) {
           
         }
         html: {
-          깊이1
+          깊이1: "<div><span>${</span></div>"
           깊이2
           깊이3
         }
@@ -159,4 +163,9 @@ function replaceData(string, ...args) {
           내지명
         }
       }
+
+
+
+    data-input
+    
 */

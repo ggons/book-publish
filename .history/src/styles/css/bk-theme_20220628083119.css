@@ -45,7 +45,7 @@
 .unit-three-depth .line { width: 100%; border-bottom: 1px dashed #707070; margin: 0 12px 0 30px; }
 .unit-three-depth .page { margin-left: auto; flex-shrink: 0; }
 .bk-index-page.second { padding-top: 173px; }
-.bk-index-page.second .bk-index-dan:first-child { padding-bottom: 340px; }
+.bk-index-page.second .bk-index-dan:first-child { padding-bottom: 420px; }
 
 .bk-tobira-page .ico-unit { display: inline-block; vertical-align: middle; width: 214px; height: 214px; line-height: 214px; background: url(../image/ico-unit-circle.svg) 0 0 no-repeat; font-family: 'Nanum Myeongjo', serif; font-size: 165px; text-align: center; color: #fff; font-weight: 800; }
 .bk-tobira-page .tobira-bg { position: absolute; bottom: 32px; left: 20px; font-size: 0; }

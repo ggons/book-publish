@@ -55,3 +55,4 @@ table {
 img { image-rendering: -webkit-optimize-contrast; max-width: 100%; }
 div { image-rendering: -webkit-optimize-contrast; }
 *, *::before, *::after { box-sizing: border-box; }
+* { text-underline-offset: 2px;}

@@ -12,12 +12,14 @@
     <link type="text/css" rel="stylesheet" href="../styles/css/mathjax-svg.css" id="MJX-SVG-styles" />
   </head>
   <body>
-    <!-- 뒷표지 -->
-    <%- include('./뒷표지.ejs') %>
-    <!-- 책등 -->
-    <%- include('./책등.ejs') %>
-    <!-- 표지 -->
-    <%- include('./앞표지.ejs') %>
+    <page data-type="book-cover">
+      <!-- 뒷표지 -->
+      <%- include('./뒷표지.ejs') %>
+      <!-- 책등 -->
+      <%- include('./책등.ejs') %>
+      <!-- 표지 -->
+      <%- include('./앞표지.ejs') %>
+    </page>
 
   </body>
   </html>

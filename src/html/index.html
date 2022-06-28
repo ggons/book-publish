@@ -294,6 +294,11 @@
     <script>
       const pageList = document.querySelectorAll('page');
       let pageNumber = 0;
+      
+      const getPageClass = (pageNumber) => {
+        return pageNumber % 2  === 0 ? 'page-even' : 'page-odd'
+      }
+
       for (let page of pageList) {
         pageNumber++;
         page.insertAdjacentHTML('beforeend', `
@@ -308,6 +313,16 @@
             <div style="position: absolute;left: -10mm;width: 10mm;height:10mm;bottom: -5mm;border-right: 1px solid #000;border-top: 1px solid #000;box-sizing: border-box;"></div>
           </div>
         `)
+
+        const bkPageElement = page.querySelector('.bk-page');
+        bkPageElement.classList.add(getPageClass(pageNumber));
+
+        const bkHeaderElement = bkPageElement.querySelector('.bk-header');
+        if (bkHeaderElement) {
+          bkHeaderElement.innerHTML = `
+            <div class="bk-page-title">소단원 명</div>
+          `;
+        }
 
         const footerElement = page.querySelector('.bk-footer');
         if (footerElement) {

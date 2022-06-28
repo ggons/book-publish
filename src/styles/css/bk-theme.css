@@ -11,9 +11,9 @@
 .bk-quiz-page .bk-body .entry.level3 + .level3 { margin-top: 40px; }
 .bk-quiz-page .bk-body img + .level3 { margin-top: 40px; }
 
-.bk-quiz-page .bk-footer { line-height: 13mm; }
-.bk-quiz-page .bk-footer .bk-page-num { text-align: left; font: normal normal bold 14px/20px 'Noto Sans KR'; color: #453896; margin-right: 16px; margin-left: 28px; }
-.bk-quiz-page .bk-footer .bk-info { text-align: left; font: normal normal normal 12px/17px 'Noto Sans KR'; color: #000000; }
+.bk-quiz-page .bk-footer { display: flex; padding: 0 12px; }
+.bk-quiz-page .bk-footer .bk-page-num { line-height: 13mm; font: normal normal bold 14px/20px 'Noto Sans KR'; color: #453896; margin-right: 16px; margin-left: 16px; }
+.bk-quiz-page .bk-footer .bk-info { line-height: 13mm; font: normal normal normal 12px/17px 'Noto Sans KR'; color: #000000; }
 
 
 /********** 앞표지 **********/
@@ -78,4 +78,6 @@
 
 /********** 내지 **********/
 .bk-quiz-page .bk-header { font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 28px; font-weight: 800; display: flex; align-items: center; padding: 0 150px 0 205px; }
-.bk-quiz-page.page-right .bk-header { justify-content: flex-end; }
+.bk-page.page-odd .bk-header { justify-content: flex-end; background-image: url(../image/inner-top-right.png); background-size: contain; background-repeat: no-repeat; }
+.bk-page.page-even .bk-header { background-image: url(../image/inner-top-left.png); background-size: contain; background-repeat: no-repeat; }
+.bk-page.page-even .bk-footer { flex-direction: row-reverse; }

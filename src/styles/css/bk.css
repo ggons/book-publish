@@ -8,10 +8,10 @@
   /* page { margin: 10mm; } */
 }
 
-page[data-type="bk"] { width: 230mm; height: 303mm; }
-.bk-page { width: 100%; height: 100%; overflow: hidden; }
+/* page[data-type="bk"] { width: 230mm; height: 303mm; } */
+.bk-page { width: 230mm; height: 303mm; overflow: hidden; }
 
-.bk-quiz-page { width: 100%; height: 100%; display: flex; flex-direction: column; }
+.bk-quiz-page { display: flex; flex-direction: column; }
 .bk-quiz-page .bk-header { height: 23mm; }
 .bk-quiz-page .bk-footer { height: 16mm; }
 .bk-quiz-page .bk-body { height: 264mm; margin: 0mm 8mm; overflow: hidden; }

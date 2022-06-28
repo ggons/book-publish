@@ -67,7 +67,7 @@
 .bk-tobira-page .unit-list { width: 300px; }
 
 /********** 책등 **********/
-.bk-spine-page { display: flex; flex-direction: column; align-items: center; width: 30mm; height: 303mm; }
+.bk-spine-page { display: flex; flex-direction: column; align-items: center; width: 30mm; height: 303mm; background-color: #fff; }
 .bk-spine-page .title-area { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 727px; }
 .bk-spine-page .bk-main-title { font-family: yg-jalnan; font-size: 38px; color: #4640C1; white-space: nowrap; transform: rotate(90deg); }
 .bk-spine-page .bk-info { font-family: Handon3gyeopsal600g; color: #fff; margin-top: auto; background-color: #000; text-align: center; height: 420px; width: 100%; }
@@ -81,3 +81,8 @@
 .bk-page.page-odd .bk-header { justify-content: flex-end; background-image: url(../image/inner-top-right.png); background-size: contain; background-repeat: no-repeat; }
 .bk-page.page-even .bk-header { background-image: url(../image/inner-top-left.png); background-size: contain; background-repeat: no-repeat; }
 .bk-page.page-odd .bk-footer { flex-direction: row-reverse; }
+
+
+[data-type="book-cover"] { display: flex; }
+[data-type="book-cover"] > * { flex-shrink: 0; }
+[data-type="book-cover"] .bk-spine-page { margin: 0 -3mm; z-index: 99; }

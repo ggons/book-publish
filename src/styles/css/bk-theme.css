@@ -2,6 +2,7 @@
 
 .bk-image-page { background-size: 100% 100%; }
 
+.bk-quiz-page { background-size: contain; background-repeat: no-repeat; }
 .bk-quiz-page .bk-body .entry { font-family: 'Noto Serif KR'; color: #000; }
 .bk-quiz-page .bk-body .entry .entry-info { display: inline-flex; align-items: center; margin-bottom: 12px; }
 .bk-quiz-page .bk-body .entry .entry-info .entry-num { font-size: 22px; font-family: 'Noto Sans KR'; letter-spacing: -1.01px; color: #598E34; font-weight: 700; line-height: 18px; }
@@ -15,7 +16,7 @@
 .bk-quiz-page .bk-footer .bk-info { text-align: left; font: normal normal normal 12px/17px 'Noto Sans KR'; color: #000000; }
 
 
-/********** 표지 **********/
+/********** 앞표지 **********/
 .bk-title-page { padding: 156px 0 65px 70px; height: 100%; display: flex; flex-direction: column; }
 .bk-title-page .bk-main-title { font-family: yg-jalnan; font-size: 87px; color: #4640C1; line-height: 1.1; }
 .bk-title-page .bk-sub-title { font-family: yg-jalnan; font-size: 22px; color: #393939; line-height: 1.3; margin-top: 30px; }
@@ -27,10 +28,20 @@
 .bk-title-page .bk-copyright { font-family: Handon3gyeopsal600g; align-self: flex-end; font-size: 34px; background-color: #4640C1; color: #fff; display: flex; padding: 19px 30px; }
 .bk-title-page .bk-copyright p + p { border-left: 4px solid #fff; margin-left: 20px; padding-left: 20px; }
 
+/********** 뒷표지 **********/
+.bk-back-cover { text-align: center; font-family: yg-jalnan; padding: 250px 50px 0; }
+.bk-back-cover .bk-main-title { font-size: 66px; color: #4640C1; line-height: 1.2; }
+.bk-back-cover .bk-sub-title { font-size: 22px; color: #00A2F5; line-height: 1.3; }
+.bk-back-cover .bk-sub-title + .bk-main-title { margin-top: 20px; }
+
 /********** 목차 **********/
 .bk-index-page { padding: 257px 70px 152px 80px; display: grid; grid-template-columns: 1fr 1fr; justify-content: center; height: 100%; }
 .bk-index-page .bk-index-dan { width: 100%; display: flex; flex-direction: column; padding-left: 50px; overflow: hidden; }
 .bk-index-page .bk-index-dan .dan-inner { overflow: hidden; }
+.bk-index-page.second { padding-top: 173px; }
+.bk-index-page.second .bk-index-dan:first-child { padding-bottom: 340px; }
+
+
 .unit-one-depth { font-family: 'Nanum Myeongjo', serif; font-weight: 800; border-bottom: 1px dashed #707070; padding-bottom: 16px; margin-top: 60px; }
 .unit-one-depth:first-child { margin-top: 0; }
 .unit-one-depth .num { display: block; width: 50px; height: 50px; line-height: 50px; background-color: #F080A8; border-radius: 50%; color: #F4F3F1; font-size: 46px; text-align: center; margin-bottom: 20px; }
@@ -38,16 +49,33 @@
 .unit-two-depth { font-size: 14px; font-weight: 700; margin-top: 60px; }
 .unit-one-depth + .unit-two-depth { margin-top: 30px; }
 .unit-two-depth .num { color: #F080A8; }
-.unit-three-depth { display: flex; font-size: 12px; margin-top: 15px; padding-left: 20px; }
+.unit-three-depth { display: flex; font-size: 13px; margin-top: 15px; padding-left: 20px; }
 .unit-two-depth + .unit-three-depth { margin-top: 25px; }
-.unit-three-depth .num { font-weight: 500; flex-shrink: 0; }
+.unit-three-depth .num { font-weight: 500; flex-shrink: 0; margin-right: 2px; }
 .unit-three-depth .tit { flex-shrink: 0; }
 .unit-three-depth .line { width: 100%; border-bottom: 1px dashed #707070; margin: 0 12px 0 30px; }
-.unit-three-depth .page { margin-left: auto; flex-shrink: 0; }
-.bk-index-page.second { padding-top: 173px; }
-.bk-index-page.second .bk-index-dan:first-child { padding-bottom: 340px; }
+.unit-three-depth .page { margin-left: auto; flex-shrink: 0; font-size: 14px; }
 
+/********** 도비라 **********/
+.bk-tobira-page { height: 100%; padding-left: 160px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .bk-tobira-page .ico-unit { display: inline-block; vertical-align: middle; width: 214px; height: 214px; line-height: 214px; background: url(../image/ico-unit-circle.svg) 0 0 no-repeat; font-family: 'Nanum Myeongjo', serif; font-size: 165px; text-align: center; color: #fff; font-weight: 800; }
 .bk-tobira-page .tobira-bg { position: absolute; bottom: 32px; left: 20px; font-size: 0; }
-.bk-tobira-page .tobira-bg .ico-unit { margin-right: 44px; }
 .bk-tobira-page.right .tobira-bg { left: 90px; }
+.bk-tobira-page .tobira-bg .ico-unit { margin-right: 44px; }
+.bk-tobira-page .unit-title { font-family: 'Nanum Myeongjo', serif; font-size: 51px; font-weight: 700; margin: 40px 0; }
+.bk-tobira-page .unit-list { width: 300px; }
+
+
+/********** 책등 **********/
+.bk-spine-page { display: flex; flex-direction: column; align-items: center; height: 100%; }
+.bk-spine-page .title-area { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 727px; }
+.bk-spine-page .bk-main-title { font-family: yg-jalnan; font-size: 38px; color: #4640C1; white-space: nowrap; transform: rotate(90deg); }
+.bk-spine-page .bk-info { font-family: Handon3gyeopsal600g; color: #fff; margin-top: auto; background-color: #000; text-align: center; height: 420px; width: 100%; }
+.bk-spine-page .bk-info .bk-subject { font-size: 28px; background-color: #2F29A2; height: 57px; line-height: 57px; margin-bottom: 19px; }
+.bk-spine-page .bk-info .bk-grade { font-size: 22px; }
+.bk-spine-page .bk-info .bk-semester { font-size: 23px; }
+.bk-spine-page .bk-info .bk-semester::before { content: ''; display: block; width: 61px; height: 1px; background-color: #B2B4FF; margin: 10px auto; }
+
+/********** 내지 **********/
+.bk-quiz-page .bk-header { font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 28px; font-weight: 800; display: flex; align-items: center; padding: 0 150px 0 205px; }
+.bk-quiz-page.page-right .bk-header { justify-content: flex-end; }

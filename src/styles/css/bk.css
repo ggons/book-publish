@@ -19,3 +19,7 @@ page[data-type="bk"] { width: 230mm; height: 303mm; }
 /* .bk-quiz-page .bk-body .dan-2::after { content: ''; position: absolute; height: 100%; width: 1px; background-color: #ACACAC; left: 50%; top: 0px; } */
 .bk-quiz-page .bk-body .dan-2 .dan-2-1 { position: relative; width: 100%; display: flex; flex-direction: column; overflow: hidden; }
 .bk-quiz-page .entry:first-child { margin-top: 5mm; }
+
+
+/********** 책등 **********/
+page[data-type="spine"] { width: 30mm; height: 303mm; }

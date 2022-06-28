@@ -42,18 +42,19 @@
 .bk-index-page.second .bk-index-dan:first-child { padding-bottom: 340px; }
 
 
-.unit-one-depth { font-family: 'Nanum Myeongjo', serif; font-weight: 800; border-bottom: 1px dashed #707070; padding-bottom: 16px; margin-top: 60px; }
+.unit-one-depth { font-family: 'Nanum Myeongjo', serif; font-weight: 800; line-height: 1.1; border-bottom: 1px dashed #707070; padding-bottom: 16px; margin-top: 60px; }
 .unit-one-depth:first-child { margin-top: 0; }
 .unit-one-depth .num { display: block; width: 50px; height: 50px; line-height: 50px; background-color: #F080A8; border-radius: 50%; color: #F4F3F1; font-size: 46px; text-align: center; margin-bottom: 20px; }
-.unit-one-depth .tit { font-size: 18px; }
-.unit-two-depth { font-size: 14px; font-weight: 700; margin-top: 60px; }
+.unit-one-depth .tit { font-size: 18px; word-break: keep-all; }
+.unit-two-depth { display: flex; font-size: 14px; font-weight: 700; line-height: 1.1; margin-top: 60px; }
 .unit-one-depth + .unit-two-depth { margin-top: 30px; }
-.unit-two-depth .num { color: #F080A8; }
-.unit-three-depth { display: flex; font-size: 13px; margin-top: 15px; padding-left: 20px; }
+.unit-two-depth .tit { word-break: keep-all; }
+.unit-two-depth .num { color: #F080A8; margin-right: 4px; }
+.unit-three-depth { display: flex; font-size: 13px; line-height: 1.1; margin-top: 15px; padding-left: 20px; }
 .unit-two-depth + .unit-three-depth { margin-top: 25px; }
-.unit-three-depth .num { font-weight: 500; flex-shrink: 0; margin-right: 2px; }
-.unit-three-depth .tit { flex-shrink: 0; }
-.unit-three-depth .line { width: 100%; border-bottom: 1px dashed #707070; margin: 0 12px 0 30px; }
+.unit-three-depth .num { font-weight: 500; flex-shrink: 0; margin-right: 4px; }
+.unit-three-depth .tit { max-width: 77%; flex-shrink: 0; word-break: keep-all; }
+.unit-three-depth .line { width: 100%; border-bottom: 1px dashed #707070; margin: 10px 5px 0 10px; align-self: flex-start; }
 .unit-three-depth .page { margin-left: auto; flex-shrink: 0; font-size: 14px; }
 
 /********** 도비라 **********/

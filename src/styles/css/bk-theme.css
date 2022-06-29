@@ -83,6 +83,6 @@
 .bk-page.page-odd .bk-footer { flex-direction: row-reverse; }
 
 
-[data-type="book-cover"] { display: flex; }
+[data-type="book-cover"] { display: flex; width: min-content; }
 [data-type="book-cover"] > * { flex-shrink: 0; }
 [data-type="book-cover"] .bk-spine-page { margin: 0 -3mm; z-index: 99; }

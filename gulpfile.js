@@ -10,6 +10,10 @@ function styleTask() {
   return src('./src/styles/**/*').pipe(dest('dist/styles'));
 }
 
+function scriptTask() {
+  return src('./src/scripts/**/*').pipe(dest('dist/scripts'));
+}
+
 function browsersyncServe(cb) {
   browserSync.init({
     server: {
@@ -28,9 +32,9 @@ function browsersyncReload(cb) {
 function watchTask() {
   watch('*.html', browsersyncReload);
   watch(
-    ['src/html/*.html', 'src/html/**/*.ejs', 'src/styles/**/*.*'],
-    series(ejsTask, styleTask, browsersyncReload)
+    ['src/html/*.html', 'src/html/**/*.ejs', 'src/styles/**/*.*', 'src/scripts/**/*.*'],
+    series(ejsTask, styleTask, scriptTask, browsersyncReload)
   );
 }
 
-exports.default = series(ejsTask, styleTask, browsersyncServe, watchTask);
+exports.default = series(ejsTask, styleTask, scriptTask, browsersyncServe, watchTask);

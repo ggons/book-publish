@@ -3,7 +3,7 @@
 .bk-image-page { background-size: 100% 100%; }
 
 .bk-quiz-page { background-size: contain; background-repeat: no-repeat; }
-.bk-quiz-page .bk-body .entry { font-family: 'Noto Serif KR'; color: #000; }
+.bk-quiz-page .bk-body .entry { font-family: 'Nanum Gothic', sans-serif; color: #000; }
 .bk-quiz-page .bk-body .entry .entry-info { display: inline-flex; align-items: center; margin-bottom: 12px; }
 .bk-quiz-page .bk-body .entry .entry-info .entry-num { font-size: 22px; font-family: 'Noto Sans KR'; letter-spacing: -1.01px; color: #598E34; font-weight: 700; line-height: 18px; }
 
@@ -82,7 +82,6 @@
 .bk-page.page-even .bk-header { background-image: url(../image/inner-top-left.png); background-size: contain; background-repeat: no-repeat; }
 .bk-page.page-odd .bk-footer { flex-direction: row-reverse; }
 
-
-[data-type="book-cover"] { display: flex; width: min-content; }
-[data-type="book-cover"] > * { flex-shrink: 0; }
-[data-type="book-cover"] .bk-spine-page { margin: 0 -3mm; z-index: 99; }
+[data-type="outside-cover"] { display: flex; width: min-content; }
+[data-type="outside-cover"] > * { flex-shrink: 0; }
+[data-type="outside-cover"] .bk-spine-page { margin: 0 -3mm; z-index: 99; }

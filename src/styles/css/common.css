@@ -3,9 +3,9 @@
 page { display: block; position: relative; }
 page table { max-width: 100%; }
 
-.entry { font-size: 10pt; line-height: 17pt; }
+.entry { font-size: 10.5pt; line-height: 17pt; }
 .entry:not([data-kind="image"]) { margin-left: 6.5mm; margin-right: 6.5mm; }
-.entry p, .entry span { font-size: 10pt; line-height: 17pt; }
+.entry p, .entry span { font-size: 10.5pt; line-height: 17pt; }
 .level3 img { display: block; max-width: 100% !important; }
 .level3 .sel_list img { margin: 0; }
 .level5 { margin-top: 2px; }

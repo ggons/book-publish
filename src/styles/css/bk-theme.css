@@ -3,9 +3,9 @@
 .bk-image-page { background-size: 100% 100%; }
 
 .bk-quiz-page { background-size: contain; background-repeat: no-repeat; }
-.bk-quiz-page .bk-body .entry { font-family: 'Nanum Gothic', sans-serif; color: #000; }
+.bk-quiz-page .bk-body .entry { font-family: 'Sandol_Myeongjo', sans-serif; color: #000; }
 .bk-quiz-page .bk-body .entry .entry-info { display: inline-flex; align-items: center; margin-bottom: 12px; }
-.bk-quiz-page .bk-body .entry .entry-info .entry-num { font-size: 22px; font-family: 'Noto Sans KR'; letter-spacing: -1.01px; color: #598E34; font-weight: 700; line-height: 18px; }
+.bk-quiz-page .bk-body .entry .entry-info .entry-num { font-size: 14pt; font-family: 'Sandol_Gothic'; letter-spacing: -1.01px; color: #598E34; font-weight: 500; line-height: 18px; }
 
 .bk-quiz-page .bk-body .entry .entry-info .entry-difficulty { font-size: 14px;  font-family: 'Noto Sans KR'; font-weight: 500; display: inline-block; width: 16px; height: 16px; line-height: 16px; color: #fff; background-color: #813D92; border-radius: 50%; text-align: center; margin-left: 6px; margin-top: 2px; }
 .bk-quiz-page .bk-body .entry.level3 + .level3 { margin-top: 40px; }
@@ -77,7 +77,7 @@
 .bk-spine-page .bk-info .bk-semester::before { content: ''; display: block; width: 61px; height: 1px; background-color: #B2B4FF; margin: 10px auto; }
 
 /********** 내지 **********/
-.bk-quiz-page .bk-header { font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 28px; font-weight: 800; display: flex; align-items: center; padding: 0 150px 0 205px; }
+.bk-quiz-page .bk-header { font-family: 'Nanum Myeongjo', serif; color: #fff; font-size: 28px; font-weight: 800; display: flex; align-items: center; padding: 3mm 150px 0 205px; }
 .bk-page.page-odd .bk-header { justify-content: flex-end; background-image: url(../image/inner-top-right.png); background-size: contain; background-repeat: no-repeat; }
 .bk-page.page-even .bk-header { background-image: url(../image/inner-top-left.png); background-size: contain; background-repeat: no-repeat; }
 .bk-page.page-odd .bk-footer { flex-direction: row-reverse; }

@@ -16,6 +16,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Sandol_Myeongjo";
+  src: url("../fonts/산돌 명조B.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Sandol_Myeongjo";
+  src: url("../fonts/산돌 명조M.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Sandol_Myeongjo";
+  src: url("../fonts/산돌 명조L.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Sandol_Gothic";
+  src: url("../fonts/산돌고딕N.TTF") format("truetype");
+  font-weight: 500;
+}
+
 /* 차례  */
 /* one-depth */
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');

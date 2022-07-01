@@ -8,6 +8,9 @@ export class Main {
         {
           html: `
             <div class="bk-page bk-image-page" style="background-image: url(../styles/image/bg-back-cover.png); ">
+              <div class="...">
+              
+              </div>
               <div class="bk-back-cover">
                 <div class="bk-sub-title"><div data-input="부제">중등 2학년 1학기 100점 만점<br>쌍둥이 기출문제집</div></div>
                 <h1 class="bk-main-title"><div data-input="제목">중등 쌍둥이<br>기출문제집</div></h1>
@@ -440,17 +443,32 @@ function replaceData(string, ...args) {
     page
       data-print-name="겉표지,내지"
 
-      div
-        .bk-page
-          width: 230mm;
-          height: 303mm;
-          overflow: hidden;
+      div.bk-page data-outside-name="앞표지,책등,뒷표지,앞표지뒤,책등뒤,뒷표지뒤" data-inside-name="속표지,목차,대단원표지,중단원표지,소단원표지,문제,마인드맵"> odd even
+        width: 230mm; 224 + 3 + 3
+        height: 303mm; 297 + 3 + 3
+        overflow: hidden;
+        
+        <div class="...">
+          .bk-header
+            height: 20mm; + 3mm 도련
+          .bk-body
+            width: 194mm;
+            height: 264mm;
+            margin: 0 auto;
+            overflow: hidden;
+          .bk-footer
+            height: 13mm; + 3mm 도련
+        </div>
+
+        data-outside-name="앞표지,책등,뒷표지,앞표지뒤,책등뒤,뒷표지뒤"
+        data-outside-name="책등,책등뒤"
+          width: 15mm;
 
         div
-          data-page-name="속표지,목차,대단원표지,중단원표지,소단원표지,내지,마인드맵"
-          홀수, 짝수 페이지 nth-child(odd, even)
+          data-inside-name="속표지,목차,대단원표지,중단원표지,소단원표지,문제,마인드맵"
+          .page-odd .page-even
 
-          div[data-data-name="내지"]
+          div[data-inside-name="문제"]
             .bk-header
               height: 20mm; + 3mm 도련
             .bk-body
@@ -460,5 +478,133 @@ function replaceData(string, ...args) {
               overflow: hidden;
             .bk-footer
               height: 13mm; + 3mm 도련
+
+          div[data-inside-name="마인드맵"]
     
+  
+
+  <pages>
+    <page>
+      <div class="bk-page" data-outside-name="뒷표지">
+        <div class="bk-back-cover">
+          <div class="bk-sub-title"><div data-input="부제">중등 2학년 1학기 100점 만점<br>쌍둥이 기출문제집</div></div>
+          <h1 class="bk-main-title"><div data-input="제목">중등 쌍둥이<br>기출문제집</div></h1>
+        </div>
+      </div>
+      <div class="bk-page" data-outside-name="앞표지">
+        <div class="bk-title-page">
+          <h1 class="bk-main-title"><div data-input="제목">중등 쌍둥이<br>기출문제집</div></h1>
+          <div class="bk-sub-title"><div data-input="부제">중등 2학년 1학기 100점 만점<br>쌍둥이 기출문제집</div></div>
+    
+          <div class="bk-info">
+            <p class="bk-subject" data-input="과목">수학</p>
+            <p class="bk-grade"><span data-input="학년">2학년</span> <span data-input="학기">1학기</span></p>
+          </div>
+          <div class="bk-copyright">
+            <p class="bk-institute" data-input="기관명">강남 종로학원</p>
+            <p class="bk-writer" data-input="편저">이단비 편저</p>
+          </div>
+        </div>
+      </div>
+    </page>
+  </pages>
+
+
+  <page data-print-name="내지">
+    <div class="bk-page" data-inside-name="속표지,목차,대단원표지,중단원표지,소단원표지,문제,마인드맵,정답과해설">
+      .bk-header
+        height: 20mm; + 3mm 도련
+      .bk-body
+        width: 194mm;
+        height: 264mm;
+        margin: 0 auto;
+        overflow: hidden;
+      .bk-footer
+        height: 13mm; + 3mm 도련
+
+      <div 
+    </div>
+  </page>
+
+194mm
+264mm..
+
+
+
+  <div class="bk-page" data-inside-name="속표지,목차,대단원표지,중단원표지,소단원표지,문제,마인드맵,정답과해설">
+    <div class="bk-container">
+      <header></header>
+      <body>문제</body>
+      <footer></footer>
+    </div>
+  </div>
+
+  <div class="bk-page" data-inside-name="속표지,목차,대단원표지,중단원표지,소단원표지,문제,마인드맵,정답과해설">
+    <div class="bk-container">
+      <header></header>
+      <body><div><img src="..." width="100%" /></div></body>
+      <footer></footer>
+    </div>
+  </div>
+
+  <div class="bk-page" data-inside-name="속표지,목차,대단원표지,중단원표지,소단원표지,문제,마인드맵,정답과해설">
+    <div class="bk-container">
+      <div 이미지 />
+    </div>
+  </div>
+
+
+
+  앞표지..뒤표지... 책등  
+  
+  
+  
+  속표지  
+
+  목차...
+  문제...
+  정답과해설...
+  
+
+
+
+
+  reset - 문제지, 교재
+common - 문제지, 교재
+bk - 교재
+exp - 문제지
+theme...
+
+
+
+
+
+
+내지 구성
+
+
+
+
+조판영역
+  너비 194  (좌측 여백 8) + 바디 (194) + (우측 여백 8)
+  높이 264  (헤더 20) + 바디 (264) + (푸터 13)
+
+교재
+  너비 230 -> 224
+  높이 303 -> 297
+  
+A4
+  너비 210
+  높이 297
+
+
+
+출력 
+  - A4
+  - 출판
+    교재 사이즈 + 여백 10 (CSS)
+
+    프린트 설정
+      너비 250 여백 0
+      높이 323 여백 0
 */
